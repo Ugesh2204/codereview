@@ -84,7 +84,10 @@ function ShowAlloption() {
         if(capusleobtn){
           capusleobtn.addEventListener('click', function(){
             capusleobtn.classList.add('active');
-            if(filterobtn || expressobtn){
+            let sectionone = document.getElementById('sectionone');
+            let optionOnetitle = inner.details[0].title
+            sectionone.textContent = `${optionOnetitle}`;
+            if(filterobtn){
               filterobtn.classList.remove('active');
             }
             if(expressobtn){
@@ -118,33 +121,7 @@ function ShowAlloption() {
             }
           });
         } 
-     
-
-       
-
-        // let btnoption = document.querySelectorAll(".card");
-        // btnoption.forEach(function(cardbtn){
-        //   cardbtn.addEventListener('click', function(e){
-        //     cardbtn = e.currentTarget.classList;
-        //     console.log(cardbtn.value);
-
-        //     let parentbtnid = e.currentTarget.id;
     
-        //     if(parentbtnid == `option_${product.id}`){
-        //       let parentbtn = e.currentTarget;
-        //       parentbtn.classList.add('active');
-        //       let filter = inner.details[1].id;
-        //       let filteroption = document.getElementById(`option_${filter}`);
-        //       filteroption.classList.remove('active');
-        //       let expresso = inner.details[2].id
-        //       let expressooption = document.getElementById(`option_${expresso}`);
-        //       expressooption.classList.remove('active');
-        //     }  
-           
-           
-
-        //   })
-        // })
         
       }
     }
@@ -159,5 +136,10 @@ function ShowAlloption() {
   
 }
 
+
+
+let optionOnetxt = document.getElementById('sectionone').textContent;
+let optiontwotxt = document.getElementById('sectiontwo').textContent;
+console.log(optionOnetxt);
 
 
