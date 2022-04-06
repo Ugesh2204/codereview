@@ -1,0 +1,21 @@
+const company = [
+    {
+      company: 'ABC',
+      details: [
+        {
+          employee: 'Lesley Peden',
+          _id: 2
+        }
+      ]
+    },
+    {
+      company: 'EFG',
+      details: [
+        {
+          employee: 'Wayne Smith',
+          _id: 2
+        }
+      ]
+    },
+  ];
+  
