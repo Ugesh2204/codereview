@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <style>
     .abc{
@@ -19,6 +20,12 @@
     .active {
         background-color: brown;
     }
+    .planbtn {
+        background-color: #ccc;
+        padding: 1rem 1.5rem;
+        border: none;
+        color:#fff;
+    }
 </style>
 <body>
     
@@ -29,12 +36,17 @@
     <div class="abc">
 
     </div>
+    <div class="efg">
 
-    <div class="plan">
-        <p>This is optionOne <span id="sectionone">------------</span></p>
+    </div>
+
+    <div id="plan">
+            
+        <div class="optOne"><p>This is optionOne <span id="sectionone">------------</span></p></div>
         <p>This is optiontwo <span  id="sectiontwo">------------</span></p>
         <p>This is optionOne <span  id="sectionthree">------------</span></p>
     </div>
+    <button class="planbtn"disabled>Plan</button>
 </body>
 <!-- <script type="text/javascript" src="Data.json"></script> -->
 
